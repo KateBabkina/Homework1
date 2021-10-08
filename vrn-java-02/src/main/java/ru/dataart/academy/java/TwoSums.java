@@ -29,7 +29,7 @@ public class TwoSums {
     //Метод возвращает индекс, разделяющий эти части
     private int getMiddleIndex(int[] nums, int target) {
         int index = 0;
-        while (index < nums.length && nums[index] < target / 2){
+        while (index < nums.length && nums[index] < target / 2) {
             index++;
         }
         return index;
