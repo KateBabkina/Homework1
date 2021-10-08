@@ -12,8 +12,7 @@ public class Main {
         try {
             ReverseInteger reverseInteger = new ReverseInteger();
             System.out.println("Reverse integer works: " + reverseInteger.reverse( -456));
-        }
-        catch (MyException e){
+        } catch (MyException e) {
             System.out.println("An entered number cannot be converted");
         }
     }
