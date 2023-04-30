@@ -33,7 +33,7 @@ public class LongestSubstring {
                     currSubstring.add(charArray[j]);
                 }
             }
-            if (currSubstring.size() == length) {
+            if (currSubstring.size() == length){
                 return length;
             }
             maxLength = currSubstring.size() > maxLength ? currSubstring.size() : maxLength;
@@ -69,7 +69,7 @@ public class LongestSubstring {
                     currLength++;
                 }
             }
-            if (currLength == length) {
+            if (currLength == length){
                 return length;
             }
             maxLength = currLength > maxLength ? currLength : maxLength;
