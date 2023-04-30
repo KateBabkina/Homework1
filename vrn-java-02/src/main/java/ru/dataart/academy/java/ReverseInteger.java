@@ -12,7 +12,7 @@ public class ReverseInteger {
 
     public int reverse(int inputNumber) throws RuntimeException {
         boolean negative = false;
-        if (inputNumber < 0) {
+        if (inputNumber < 0){
             inputNumber = 0 - inputNumber;  //inputNumber = Math.abs(inputNumber);
             negative = true;
         }
@@ -21,10 +21,10 @@ public class ReverseInteger {
             outputNumber = 10 * outputNumber + inputNumber % 10;
             inputNumber = inputNumber / 10;
         }
-        if (negative) {
+        if (negative){
             outputNumber = 0 - outputNumber;
         }
-        if (outputNumber < Integer.MIN_VALUE || outputNumber > Integer.MAX_VALUE) {
+        if (outputNumber < Integer.MIN_VALUE || outputNumber > Integer.MAX_VALUE){
             throw new MyException();
         }
         return (int)outputNumber;
